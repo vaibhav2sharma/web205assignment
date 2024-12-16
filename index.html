@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File management</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>File Management System</h1>
+
+        <div class="controls">
+            <input type="text" id="search" placeholder="Search...">
+            <button onclick="clearBin()">Clear Bin</button>
+            <button onclick="viewHistory()">View History</button>
+        </div>
+
+        <div id="folders">
+            <h2>Folders</h2>
+            <div id="folder-list"></div>
+        </div>
+
+        <div id="file-list">
+            <h2>Files</h2>
+            <ul id="files"></ul>
+        </div>
+
+
+        <div id="recycle-bin">
+            <h2>Recycle Bin</h2>
+            <ul id="bin-files"></ul>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    
+</body>
+</html>
